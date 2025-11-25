@@ -34,11 +34,34 @@ To write a Python program to define the abstract base class named `Polygon` and 
 ### PROGRAM
 
 ```
+from abc import ABC, abstractmethod
+
+# Abstract Base Class
+class Animal(ABC):
+    def polygan(self):
+        print("I am going to sleep in a while")
+
+    @abstractmethod
+    def sound(self):
+        pass
+
+# Child Class
+class Cat(Animal):
+    def sound(self):
+        print("I can meow")
+        print("I can hiss")
+
+# Example usage
+c = Cat()
+c.sleep()
+c.sound()
 
 
 ```
 
 ### OUTPUT
+<img width="1228" height="207" alt="image" src="https://github.com/user-attachments/assets/cd093723-b258-4bfd-9525-49a10c3af48e" />
 
 
 ### RESULT
+Thus the python program for abstract method was successfully created.
